@@ -7,10 +7,11 @@ public class DigitalVideoDisc {
     private int length;
     private float cost;
     private int id;
-    private static int num_of_discs = 0;
+    
+    private static int nbDigitalVideoDiscs = 0;
 
     public static int getNumofDiscs() {
-        return num_of_discs;
+        return nbDigitalVideoDiscs;
     }
     
     public String getTitle() {
@@ -44,8 +45,8 @@ public class DigitalVideoDisc {
     public DigitalVideoDisc(String title) {
         super();
         this.title = title;
-        num_of_discs++;
-        this.id = num_of_discs;
+        nbDigitalVideoDiscs++;
+        this.id = nbDigitalVideoDiscs;
     }
 
     public DigitalVideoDisc(String title, String category, float cost) {
@@ -53,8 +54,8 @@ public class DigitalVideoDisc {
         this.title = title;
         this.category = category;
         this.cost = cost;
-        num_of_discs++;
-        this.id = num_of_discs;
+        nbDigitalVideoDiscs++;
+        this.id = nbDigitalVideoDiscs;
     }
 
     public DigitalVideoDisc(String director, String category, String title, float cost) {
@@ -62,8 +63,8 @@ public class DigitalVideoDisc {
         this.category = category;
         this.director = director;
         this.cost = cost;
-        num_of_discs++;
-        this.id = num_of_discs;
+        nbDigitalVideoDiscs++;
+        this.id = nbDigitalVideoDiscs;
     }
 
     public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
@@ -72,8 +73,8 @@ public class DigitalVideoDisc {
         this.director = director;
         this.length = length;
         this.cost = cost;
-        num_of_discs++;
-        this.id = num_of_discs;
+        nbDigitalVideoDiscs++;
+        this.id = nbDigitalVideoDiscs;
     }
 
     public boolean isMatch(String title) {
