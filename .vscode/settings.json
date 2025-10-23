@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": [
+        "AimsProject\\src",
+        "OtherProjects\\garbage"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.referencedLibraries": []
+}
