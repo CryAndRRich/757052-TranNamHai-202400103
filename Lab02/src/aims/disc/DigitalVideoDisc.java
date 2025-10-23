@@ -83,7 +83,7 @@ public class DigitalVideoDisc {
     
     @Override
     public String toString() {
-        return this.id + "." + this.title + "-" + this.category + "-" + 
-               this.director + "-" + this.length + ": " + this.cost + "$";
+        return "DVD - " + this.title + " - " + this.category + " - " 
+            + this.director + " - " + this.length + ": " + this.cost + " $";
     }
 }
