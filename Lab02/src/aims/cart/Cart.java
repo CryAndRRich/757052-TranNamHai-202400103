@@ -119,7 +119,7 @@ public class Cart {
         System.out.println("***************************************************");
     }
 
-    public void searchById(int id) {
+    public void searchById(int id) { 
         boolean found = false;
         for (int i = 0; i < qtyOrdered; i++) {
             if (itemsOrdered[i].getID() == id) {
@@ -133,7 +133,7 @@ public class Cart {
         }
     }
     
-    public void searchByTitle(String title) {
+    public void searchByTitle(String title) { 
         boolean found = false;
         for (int i = 0; i < qtyOrdered; i++) {
             if (itemsOrdered[i].isMatch(title)) {
