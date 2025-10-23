@@ -1,4 +1,4 @@
-package aims;
+package test.store;
 
 import aims.disc.DigitalVideoDisc;
 import aims.store.Store;

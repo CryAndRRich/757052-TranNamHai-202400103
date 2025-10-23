@@ -1,4 +1,4 @@
-package demo;
+package aims;
 
 import aims.cart.Cart;
 import aims.disc.DigitalVideoDisc;
@@ -45,7 +45,7 @@ public class Aims {
     }
 
     public static void printMenu() {
-        System.out.println("#------------------Menu------------------#");
+        System.out.println("#******************Menu******************#");
         System.out.println("1. Add a disc to cart");
         System.out.println("2. Remove a disc from cart");
         System.out.println("3. Number of discs in the cart");
@@ -53,7 +53,7 @@ public class Aims {
         System.out.println("5. Show all discs in cart");
         System.out.println("6. Show available DVDs in store");
         System.out.println("7. Exit");
-        System.out.println("#----------------------------------------#");
+        System.out.println("#****************************************#");
     }
 
     public static void main(String args[]) {
@@ -61,10 +61,10 @@ public class Aims {
         Store store = initStore();
         Cart cart1 = new Cart();
 
-        System.out.println("#-----AIMS - An Internet Movie Store-----#");
+        System.out.println("#*****AIMS - An Internet Movie Store*****#");
         System.out.println("Available DVDs:");
         store.getInfo();
-        System.out.println("#----------------------------------------#");
+        System.out.println("#****************************************#");
         printMenu();
 
         while (true) {
@@ -88,7 +88,7 @@ public class Aims {
                             System.out.println("Invalid disc ID");
                             break;
                         }
-                        cart1.addDigitalVideoDisc(store.items.get(id - 1));
+                        cart1.addDigitalVideoDisc(store.itemsInStore.get(id - 1));
                     } else {
                         DigitalVideoDisc found = store.findDVD(ansAdd);
                         if (found != null) {
@@ -108,7 +108,7 @@ public class Aims {
                             System.out.println("Invalid disc ID");
                             break;
                         }
-                        cart1.removeDigitalVideoDisc(store.items.get(id - 1));
+                        cart1.removeDigitalVideoDisc(store.itemsInStore.get(id - 1));
                     } else {
                         DigitalVideoDisc foundRem = store.findDVD(ansRem);
                         if (foundRem != null) {
